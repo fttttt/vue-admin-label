@@ -1,0 +1,15 @@
+import request from '@/utils/request'
+
+export default {
+  //1.讲师列表（条件查询分页）
+  //2.current当前页 limit每页记录数 teacherQuery条件对象
+  getSubjectList(){
+    return request({
+      //url: '/table/list/'+current+"/"+limit,
+      url:`/eduservice/subject/getAllSubject`,
+      method: 'get'
+    })
+  }
+
+}
+
