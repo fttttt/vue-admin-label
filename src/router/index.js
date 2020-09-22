@@ -128,25 +128,18 @@ export const constantRouterMap = [
     ]
   },
   {
-    path: '/example',
+    path: '/fileupload',
     component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'example' },
+    redirect: '/fileupload/BigFileUpload',
+    name: '大文件上传',
+    meta: { title: '大文件上传', icon: 'example' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
-      }
-    ]
+        path: 'BigFileUpload',
+        name: '大文件上传',
+        component: () => import('@/views/edu/fileupload/BigFileUpload'),
+        meta: { title: '大文件上传', icon: 'table' }
+      }]
   },
 
   {
